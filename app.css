@@ -14,36 +14,51 @@ h1, h3, .project-panel__headline {
 }
 
 .name {
-  letter-spacing: 7px;
-  margin: 30px 0;
+  letter-spacing: 6px;
+  margin: 20px 0;
 }
 
 .side-panel {
   background-color: #026670;
   color: white;
-  min-height: 100vh;
-  padding: 10px;
   margin: 0;
+  min-height: 100vh;
+  position: fixed;
   text-align: center;
   width: 30%;
 }
 
 .side-panel__headshot {
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 5px 5px 15px black;
-  margin-bottom: 40px;
-  width: 70%;
+  margin: 0 auto 40px;
+  width: 65%;
+}
+
+.ratio16x9 {
+  position: relative;
+}
+
+.ratio16x9:before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
 }
 
 .side-panel__about-me {
   font-size: 18px;
   line-height: 1.5;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   width: 90%;
 }
 
 .side-panel__links-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .side-panel__link {
@@ -54,9 +69,12 @@ h1, h3, .project-panel__headline {
   margin: 5px;
   padding: 7px;
   text-decoration: none;
+  width: 80px;
 }
 
 .project-panel {
+  padding-bottom: 40px;
+  padding-left: 33%;
   width: 70%;
 }
 
@@ -107,24 +125,79 @@ h1, h3, .project-panel__headline {
     width: 100%;
   }
 
+  .side-panel {
+    min-height: unset;
+    padding-top: 0;
+    position: relative;
+  }
+
   .side-panel__about-container {
     display: flex;
     width: 60%;
     margin: 0 auto;
   }
 
-  .side-panel__headshot,
   .side-panel__about-me {
+    margin-left: 20px;
+    padding-top: 10%; 
     width: 50%;
-    margin: 20px;
+  }
+
+  .side-panel__headshot {
+    margin-bottom: 30px;
+    width: 45%;
   }
 
   .side-panel__links-container {
     flex-direction: column;
   }
 
+  .side-panel__links-container {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
   .side-panel__link {
     margin: 5px auto;
-    width: 60%;
+    width: 30%;
+  }
+
+  .project-panel {
+    padding-left: 0;
+  }
+
+  .project-panel__headline {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .project-panel__card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .side-panel__about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-panel__headshot {
+    width: 100%;
+  }
+
+  .side-panel__about-me {
+    margin: 0;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .project-panel__headline {
+    width: 50%;
+  }
+
+  .project-panel__card {
+    width: 90%;
   }
 }
