@@ -2,86 +2,84 @@
 <html>
 
   <head>
+    <title>Kelly Sample</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="app.css">
-    <link rel="shortcut icon" type="image/jpg" href="./img/dalecooper.jpg">
+    <link rel="shortcut icon" type="image/jpg" href="./img/floppy-disk.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Alegreya+Sans+SC|Rock+Salt" rel="stylesheet">
   </head>
 
   <body>
     <div id="main">
 
-      <div id="side">
-        <h2>Kelly Sample</h2>
-        <img id="headshot" src="./img/HeadShot.png"/>
-        <p>NYC based full stack web developer fluent in JavaScript, React, Redux, Ruby, Rails, SQL, PostgreSQL, HTML5, CSS, and GitHub/Git. </p>
-        <p>I'm creating something new every week and <a href="https://medium.com/@kellydsample" class="link" target="_blank"> blogging</a> about the experience. </p>
-        <p>My current project is <a href="https://medium.com/@kellydsample/challenge-5-optimize-an-algorithm-b0ff4fe3e3c7" class="link" target="_blank">learning how to optimizate the runtime of algorithms.</a></p>
-
-        <div id="buttons">
-          <a target="_blank" class="button" href="https://github.com/KellyStamps">GitHub</a>
-          <a target="_blank" class="button" href="https://www.linkedin.com/in/kellysample/">LinkedIn</a>
-          <a target="_blank" class="button" href="https://docs.google.com/document/d/1ZYI0n5Ed-Q75d12eM0oB76BBmxkafD_oy4F5JIdsjh0/edit?usp=sharing">Resume</a>
-          <a target="_blank" class="button" href="https://medium.com/@kellydsample">Blog</a>
+      <div class="side-panel">
+        <h1 class="name">Kelly Sample</h1>
+        <div class="side-panel__about-container">
+          <div class="side-panel__headshot ratio16x9" alt="Photo of Kelly and her dog Rigby" style="background-image: url(./img/me.jpeg)"></div>
+          <p class="side-panel__about-me">NYC based full stack web developer fluent in JavaScript and Ruby, with a passion for clean code.</p>
         </div>
 
+        <div class="side-panel__links-container">
+          <a target="_blank" class="side-panel__link" href="https://github.com/KellyStamps">GitHub</a>
+          <a target="_blank" class="side-panel__link" href="https://www.linkedin.com/in/kellysample/">LinkedIn</a>
+          <a target="_blank" class="side-panel__link" href="https://docs.google.com/document/d/1ZYI0n5Ed-Q75d12eM0oB76BBmxkafD_oy4F5JIdsjh0/edit?usp=sharing">Resume</a>
+          <a target="_blank" class="side-panel__link" href="https://medium.com/@kellydsample">Blog</a>
+        </div>
       </div>
 
-      <div id="rest">
+      <div class="project-panel">
+        <h2 class="project-panel__headline">Projects</h2>
+        <div class="project-panel__card-container">
+          <div class="project-panel__card">
+            <h3>Photo Search</h3>
+            <img src="./img/FlickrThumb.jpg" alt="Photo search project thumbnail">
+            <p class="card__description">Search for pictures from Flickr, click to view selected image in a modal.</p>
+            <p class="card__tech">Vanilla JavaScript | Pagination | Responsive Design | Flickr API </p>
+            <p class="card__tech"> HTML5 | CSS Grid | Node</p>
+            <a class="card__youtube-link" href="https://youtu.be/ZtT5nGmAseY" target="_blank"><img src="./img/yt_icon_rgb.png" alt="YouTube link icon" /></a>
+            <a class="card__github-link" href="https://github.com/KellyStamps/vanilla-js-node-project" target="_black"><img src="./img/GitHub-Mark-32px.png" alt="Github link icon"/></a>
+          </div>
 
-        <h2>Projects</h2>
+          <div class="project-panel__card">
+            <h3>Code Challenger</h3>
+            <img src="./img/codechalldemothumb.jpg" alt="Code Challenger project thumbnail"/>
+            <p class="card__description">Challenge yourself to build your coding skills and craft a portfolio page of finished projects.</p>
+            <p class="card__tech">JavaScript | React | Redux | HTML5 | CSS </p>
+            <p class="card__tech"> Rails | PostgreSQL</p>
+            <a class="card__youtube-link" href="https://youtu.be/pus0LMkY-4U" target="_blank"><img src="./img/yt_icon_rgb.png" alt="YouTube link icon"/></a>
+            <a class="card__github-link" href="https://github.com/KellyStamps/Code-Challenger-Frontend" target="_black"><img src="./img/GitHub-Mark-32px.png" alt="Github link icon"/></a>
+          </div>
 
-        <div class="project">
-         <h3>Photo Search</h3>
-         <img src="./img/FlickrThumb.jpg">
-         <p>Search for pictures from Flickr, click to view selected image in a modal.</p>
-         <p class="descrip">Vanilla JavaScript | Pagination | Responsive Design | Flickr API </p>
-         <p class="descrip"> HTML5 | CSS Grid | Node</p>
-         <a class="youtube" href="https://youtu.be/ZtT5nGmAseY" target="_blank"><img src="./img/yt_icon_rgb.png"/></a>
-         <a class="github" href="https://github.com/KellyStamps/vanilla-js-node-project" target="_black"><img src="./img/GitHub-Mark-32px.png"/></a>
+          <div class="project-panel__card">
+            <h3>TopNotch Music</h3>
+            <img src="./img/topnotchscreenshot.jpg" alt="TopNotch project thumbnail"/>
+            <p class="card__description">Log in and search musical artists.</p>
+            <p class="card__tech">JavaScript | React | Redux | last.fm API | HTML5 | CSS </p>
+            <p class="card__tech">JSON Web Token Authentication | Rails | PostgreSQL</p>
+            <a class="card__youtube-link" href="https://youtu.be/KMUtK8B3iXc" target="_blank"><img src="./img/yt_icon_rgb.png" alt="YouTube link icon"/></a>
+            <a class="card__github-link" href="https://github.com/KellyStamps/TopNotch-Music" target="_black"><img src="./img/GitHub-Mark-32px.png" alt="Github link icon"/></a>
+          </div>
+
+          <div class="project-panel__card">
+            <h3>Chatter</h3>
+            <img src="./img/chatterthumb.jpg" alt="Chatroom project thumbnail"/>
+            <p class="card__description">Chat with friends in real time. Log in and find an existing chat, or create your own.</p>
+            <p class="card__tech">JavaScript | React | HTML5 | CSS</p>
+            <p class="card__tech">Websockets (ActionCable) | Rails | PostgreSQL</p>
+            <a class="card__youtube-link" href="https://youtu.be/6lECuoTIYco" target="_blank"><img src="./img/yt_icon_rgb.png" alt="YouTube link icon"/></a>
+            <a class="card__github-link" href="https://github.com/KellyStamps/Janx-Chat-Frontend" target="_black"><img src="./img/GitHub-Mark-32px.png" alt="Github link icon"/></a>
+          </div>
+
+          <div class="project-panel__card">
+            <h3>Lipstick Finder</h3>
+            <img src="./img/lipstickthumb.jpg" alt="Lipstick search project thumbnail"/>
+            <p class="card__description">Sort through budget lipstick options by searching for key terms or choosing a brand from the drop down menu.</p>
+            <p class="card__tech">JavaScript | React | HTML5 | CSS | API </p>
+            <a class="card__youtube-link" href="https://youtu.be/Riu_P4xfWLU" target="_blank"><img src="./img/yt_icon_rgb.png" alt="YouTube link icon"/></a>
+            <a class="card__github-link" href="https://github.com/KellyStamps/Lipstick-Finder" target="_black"><img src="./img/GitHub-Mark-32px.png" alt="Github link icon"/></a>
+          </div>
         </div>
-
-        <div class="project">
-         <h3>TopNotch Music</h3>
-         <img src="./img/topnotchscreenshot.jpg">
-         <p>Log in and search musical artists.</p>
-         <p class="descrip">JavaScript | React | Redux | last.fm API | HTML5 | CSS </p>
-         <p class="descrip">JSON Web Token Authentication | Rails | PostgreSQL</p>
-         <a class="youtube" href="https://youtu.be/KMUtK8B3iXc" target="_blank"><img src="./img/yt_icon_rgb.png"/></a>
-         <a class="github" href="https://github.com/KellyStamps/TopNotch-Music" target="_black"><img src="./img/GitHub-Mark-32px.png"/></a>
-        </div>
-
-        <div class="project">
-          <h3>Code Challenger</h3>
-          <img src="./img/codechalldemothumb.jpg">
-          <p>Challenge yourself to build your coding skills and craft a portfolio page of finished projects.</p>
-          <p class="descrip">JavaScript | React | Redux | HTML5 | CSS </p>
-          <p class="descrip"> Rails | PostgreSQL</p>
-          <a class="youtube" href="https://youtu.be/pus0LMkY-4U" target="_blank"><img src="./img/yt_icon_rgb.png"/></a>
-          <a class="github" href="https://github.com/KellyStamps/Code-Challenger-Frontend" target="_black"><img src="./img/GitHub-Mark-32px.png"/></a>
-        </div>
-
-        <div class="project">
-          <h3>Chatter</h3>
-          <img src="./img/chatterthumb.jpg">
-          <p>Chat with friends in real time. Log in and find an existing chat, or create your own.</p>
-          <p class="descrip">JavaScript | React | HTML5 | CSS</p>
-          <p class="descrip">Websockets (ActionCable) | Rails | PostgreSQL</p>
-          <a class="youtube" href="https://youtu.be/6lECuoTIYco" target="_blank"><img src="./img/yt_icon_rgb.png"/></a>
-          <a class="github" href="https://github.com/KellyStamps/Janx-Chat-Frontend" target="_black"><img src="./img/GitHub-Mark-32px.png"/></a>
-        </div>
-
-        <div class="project">
-          <h3>Lipstick Finder</h3>
-          <img src="./img/lipstickthumb.jpg">
-          <p>Sort through budget lipstick options by searching for key terms or choosing a brand from the drop down menu.</p>
-          <p class="descrip">JavaScript | React | HTML5 | CSS | API </p>
-          <a class="youtube" href="https://youtu.be/Riu_P4xfWLU" target="_blank"><img src="./img/yt_icon_rgb.png"/></a>
-          <a class="github" href="https://github.com/KellyStamps/Lipstick-Finder" target="_black"><img src="./img/GitHub-Mark-32px.png"/></a>
-        </div>
-
       </div>
-
     </div>
   </body>
 
