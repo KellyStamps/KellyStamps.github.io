@@ -115,7 +115,7 @@ h1, h3, .project-panel__headline {
   width: 7%;
 }
 
-@media only screen and (max-width: 1125px) {
+@media all and (max-width: 1125px) {
   #main {
     flex-direction: column;
   }
@@ -177,7 +177,7 @@ h1, h3, .project-panel__headline {
   }
 }
 
-@media only screen and (max-width: 670px) {
+@media all and (max-width: 670px) {
   .side-panel__about-container {
     flex-direction: column;
     justify-content: center;
