@@ -172,6 +172,7 @@ h1, h3, .project-panel__headline {
   }
 
   .project-panel__card-container {
+    align-items: center;
     flex-direction: column;
     justify-content: center;
   }
@@ -179,7 +180,6 @@ h1, h3, .project-panel__headline {
 
 @media all and (max-width: 670px) {
   .side-panel__about-container {
-    align-items: center;
     flex-direction: column;
     justify-content: center;
   }
