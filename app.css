@@ -133,8 +133,8 @@ h1, h3, .project-panel__headline {
 
   .side-panel__about-container {
     display: flex;
-    width: 60%;
     margin: 0 auto;
+    width: 60%;
   }
 
   .side-panel__about-me {
@@ -167,8 +167,8 @@ h1, h3, .project-panel__headline {
   }
 
   .project-panel__headline {
-    margin-top: 50px;
     margin-bottom: 10px;
+    margin-top: 50px;
   }
 
   .project-panel__card-container {
@@ -179,6 +179,7 @@ h1, h3, .project-panel__headline {
 
 @media all and (max-width: 670px) {
   .side-panel__about-container {
+    align-items: center;
     flex-direction: column;
     justify-content: center;
   }
@@ -189,8 +190,8 @@ h1, h3, .project-panel__headline {
 
   .side-panel__about-me {
     margin: 0;
-    width: 100%;
     padding-top: 0;
+    width: 100%;
   }
 
   .project-panel__headline {
